@@ -8,9 +8,12 @@ public class App {
 		System.out.println(sumColumn(a,1)); //should print -9
 		System.out.println(sumColumn(a,3)); //should print 5
 	}
-	public static int sumColumn(int[][] array, int column)
-	{
-		return -1; //placeholder
+	public static int sumColumn(int[][] array, int column){
+		int y = 0;
+		for (int i = 0; i < array.length; i++){
+			y+= array[i][column];
+		}
+		return y;
 	}
 	
 }
